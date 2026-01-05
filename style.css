@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #FFF8F0; /* Changed from gradient to solid coral background */
+    background: linear-gradient(135deg, #fffbeb 0%, #fef3c7 100%);
     min-height: 100vh;
     padding: 20px;
 }
@@ -20,9 +20,8 @@ body {
     overflow: hidden;
 }
 
-/* HEADER - Changed to coral gradient */
 header {
-    background: linear-gradient(135deg, #FF9A76 0%, #FF7B54 100%); /* Coral gradient */
+    background: linear-gradient(135deg, #fbbf24 0%, #d97706 100%);
     color: white;
     padding: 30px;
     text-align: center;
@@ -67,7 +66,7 @@ header {
 #taskInput {
     flex: 1;
     padding: 15px 20px;
-    border: 2px solid #FFD1BA; /* Coral border */
+    border: 2px solid #f3f4f6;
     border-radius: 12px;
     font-size: 1rem;
     transition: all 0.3s ease;
@@ -76,14 +75,14 @@ header {
 
 #taskInput:focus {
     outline: none;
-    border-color: #FF9A76; /* Coral focus */
-    box-shadow: 0 0 0 3px rgba(255, 154, 118, 0.1); /* Coral shadow */
+    border-color: #fbbf24;
+    box-shadow: 0 0 0 3px rgba(251, 191, 36, 0.1);
 }
 
 .priority-selector {
     display: flex;
     gap: 5px;
-    background: #FFF8F0; /* Coral background */
+    background: #f9fafb;
     padding: 5px;
     border-radius: 10px;
 }
@@ -93,7 +92,7 @@ header {
     border: none;
     border-radius: 8px;
     background: transparent;
-    color: #666; /* Darker text */
+    color: #6b7280;
     cursor: pointer;
     font-weight: 500;
     transition: all 0.3s ease;
@@ -105,19 +104,19 @@ header {
 }
 
 .priority-btn[data-priority="high"].active {
-    color: #FF6B6B; /* Coral red */
+    color: #dc2626;
 }
 
 .priority-btn[data-priority="medium"].active {
-    color: #FF9A76; /* Coral orange */
+    color: #d97706;
 }
 
 .priority-btn[data-priority="low"].active {
-    color: #4ECDC4; /* Coral teal */
+    color: #059669;
 }
 
 .add-btn {
-    background: linear-gradient(135deg, #FF9A76 0%, #FF7B54 100%); /* Coral gradient */
+    background: linear-gradient(135deg, #fbbf24 0%, #d97706 100%);
     color: white;
     border: none;
     padding: 15px 30px;
@@ -133,19 +132,19 @@ header {
 
 .add-btn:hover {
     transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(255, 154, 118, 0.3); /* Coral shadow */
+    box-shadow: 0 5px 15px rgba(251, 191, 36, 0.3);
 }
 
 .progress-section {
     margin: 30px 0;
-    background: #FFF8F0; /* Coral background */
+    background: #f9fafb;
     padding: 20px;
     border-radius: 12px;
 }
 
 .progress-bar {
     height: 10px;
-    background: #FFD1BA; /* Light coral */
+    background: #e5e7eb;
     border-radius: 5px;
     overflow: hidden;
     margin-bottom: 10px;
@@ -153,7 +152,7 @@ header {
 
 .progress-fill {
     height: 100%;
-    background: linear-gradient(90deg, #FF9A76 0%, #FF7B54 100%); /* Coral gradient */
+    background: linear-gradient(90deg, #fbbf24 0%, #d97706 100%);
     width: 0%;
     transition: width 0.5s ease;
     border-radius: 5px;
@@ -161,7 +160,7 @@ header {
 
 .progress-text {
     font-size: 0.9rem;
-    color: #666; /* Darker text */
+    color: #6b7280;
     font-weight: 500;
 }
 
@@ -174,23 +173,23 @@ header {
 
 .filter-btn {
     padding: 10px 25px;
-    border: 2px solid #FFD1BA; /* Coral border */
+    border: 2px solid #f3f4f6;
     background: white;
     border-radius: 8px;
-    color: #666; /* Darker text */
+    color: #6b7280;
     cursor: pointer;
     font-weight: 500;
     transition: all 0.3s ease;
 }
 
 .filter-btn.active {
-    border-color: #FF9A76; /* Coral active */
-    background: #FFF0EB; /* Light coral background */
-    color: #FF7B54; /* Dark coral text */
+    border-color: #fbbf24;
+    background: #fffbeb;
+    color: #d97706;
 }
 
 .tasks-section {
-    background: #FFF8F0; /* Coral background */
+    background: #f9fafb;
     border-radius: 12px;
     padding: 25px;
 }
@@ -203,7 +202,7 @@ header {
 }
 
 .tasks-header h2 {
-    color: #FF9A76; /* Coral header */
+    color: #374151;
     display: flex;
     align-items: center;
     gap: 10px;
@@ -213,7 +212,7 @@ header {
     background: white;
     padding: 5px 15px;
     border-radius: 20px;
-    color: #666; /* Darker text */
+    color: #6b7280;
     font-weight: 500;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
 }
@@ -232,7 +231,7 @@ header {
     gap: 15px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
     animation: slideIn 0.3s ease;
-    border-left: 4px solid #4ECDC4; /* Teal for low priority */
+    border-left: 4px solid #059669;
 }
 
 @keyframes slideIn {
@@ -247,22 +246,22 @@ header {
 }
 
 .task-item.high-priority {
-    border-left-color: #FF6B6B; /* Coral red */
+    border-left-color: #dc2626;
 }
 
 .task-item.medium-priority {
-    border-left-color: #FF9A76; /* Coral orange */
+    border-left-color: #d97706;
 }
 
 .task-item.low-priority {
-    border-left-color: #4ECDC4; /* Teal */
+    border-left-color: #059669;
 }
 
 .task-checkbox {
     width: 24px;
     height: 24px;
     border-radius: 50%;
-    border: 2px solid #FFD1BA; /* Coral border */
+    border: 2px solid #d1d5db;
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -272,8 +271,8 @@ header {
 }
 
 .task-checkbox.checked {
-    background: #4ECDC4; /* Teal for checked */
-    border-color: #4ECDC4;
+    background: #10b981;
+    border-color: #10b981;
 }
 
 .task-checkbox.checked::after {
@@ -289,14 +288,14 @@ header {
 
 .task-text {
     font-size: 1.1rem;
-    color: #333; /* Darker text */
+    color: #374151;
     margin-bottom: 5px;
     transition: all 0.3s ease;
 }
 
 .task-text.completed {
     text-decoration: line-through;
-    color: #999; /* Gray for completed */
+    color: #9ca3af;
 }
 
 .task-priority {
@@ -308,18 +307,18 @@ header {
 }
 
 .task-priority.high {
-    background: #FFE4E4; /* Light coral red */
-    color: #FF6B6B; /* Coral red */
+    background: #fee2e2;
+    color: #dc2626;
 }
 
 .task-priority.medium {
-    background: #FFECE4; /* Light coral orange */
-    color: #FF9A76; /* Coral orange */
+    background: #ffedd5;
+    color: #d97706;
 }
 
 .task-priority.low {
-    background: #E4F4F3; /* Light teal */
-    color: #4ECDC4; /* Teal */
+    background: #d1fae5;
+    color: #059669;
 }
 
 .task-actions {
@@ -328,12 +327,12 @@ header {
 }
 
 .delete-btn {
-    background: #FFE4E4; /* Light coral red */
+    background: #fef2f2;
     border: none;
     width: 36px;
     height: 36px;
     border-radius: 8px;
-    color: #FF6B6B; /* Coral red */
+    color: #ef4444;
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -342,14 +341,14 @@ header {
 }
 
 .delete-btn:hover {
-    background: #FFD1D1; /* Darker coral red */
+    background: #fee2e2;
     transform: scale(1.1);
 }
 
 .empty-state {
     text-align: center;
     padding: 40px 20px;
-    color: #999; /* Gray */
+    color: #9ca3af;
 }
 
 .empty-state i {
@@ -361,35 +360,35 @@ header {
 .empty-state h3 {
     font-size: 1.5rem;
     margin-bottom: 10px;
-    color: #666; /* Dark gray */
+    color: #6b7280;
 }
 
 footer {
-    background: #FFF8F0; /* Coral background */
+    background: #f9fafb;
     padding: 20px 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-top: 1px solid #FFD1BA; /* Coral border */
+    border-top: 1px solid #e5e7eb;
 }
 
 footer p {
-    color: #666; /* Darker text */
+    color: #6b7280;
     display: flex;
     align-items: center;
     gap: 5px;
 }
 
 footer i {
-    color: #FF6B6B; /* Coral red */
+    color: #ef4444;
 }
 
 .clear-btn {
-    background: #FFD1BA; /* Light coral */
+    background: #fef2f2;
     border: none;
     padding: 10px 20px;
     border-radius: 8px;
-    color: #333; /* Dark text */
+    color: #dc2626;
     cursor: pointer;
     font-weight: 500;
     display: flex;
@@ -399,7 +398,7 @@ footer i {
 }
 
 .clear-btn:hover {
-    background: #FFB7A1; /* Medium coral */
+    background: #fee2e2;
 }
 
 /* Responsive Design */
