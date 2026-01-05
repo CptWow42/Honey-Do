@@ -2,8 +2,6 @@
 
 A beautiful, interactive task management application with a sweet honeycomb theme. Manage your to-dos with style and efficiency!
 
-![Honey-Do List Screenshot](https://via.placeholder.com/800x400/fbbf24/92400e?text=Honey-Do+List+App+with+Honeycomb+Theme)
-
 ## ✨ Features
 
 ### 🎨 Beautiful UI
